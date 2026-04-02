@@ -10,16 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@300;400;500;600;700;800&family=Open%20Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --primary: #d0062f;
-      --primary-dark: #b10528;
-      --primary-deeper: #920421;
-      --dark: #333333;
-      --highlight: #d0062f;
-      --bg-light: #4b4b4b;
-      --bg-subtle: #5c5c5c;
-      --bg-page: #2f2f2f;
-      --bg-card: #434343;
-      --bg-card-hover: #505050;
+      --primary: #00698f;
+      --primary-dark: #00597a;
+      --primary-deeper: #004a64;
+      --dark: #1c3f5a;
+      --highlight: #f7dc6f;
+      --bg-light: #37566e;
+      --bg-subtle: #49657b;
+      --bg-page: #1a3a53;
+      --bg-card: #2e4e67;
+      --bg-card-hover: #3c5a71;
       --white: #FFFFFF;
       --text-primary: #ffffff;
       --text-mid: rgba(255,255,255,0.82);
@@ -31,8 +31,8 @@
       --on-dark-muted: rgba(255,255,255,0.15);
       --border: rgba(255,255,255,0.14);
       --border-strong: rgba(255,255,255,0.25);
-      --tag-bg: #d0062f33;
-      --tag-color: #de516d;
+      --tag-bg: #00698f33;
+      --tag-color: #4d96b1;
       --shadow-sm: 0 2px 8px rgba(0,0,0,0.4);
       --shadow-md: 0 8px 30px rgba(0,0,0,0.5);
       --radius: 14px;
@@ -52,7 +52,7 @@
     .header-sagan { display: flex; align-items: center; gap: 8px; font-family: var(--font-heading); font-size: 12px; font-weight: 600; color: var(--text-mid); letter-spacing: 0.03em; text-transform: uppercase; }
 
     .hero { background: linear-gradient(145deg, var(--dark) 0%, var(--primary-deeper) 40%, var(--primary) 100%); color: var(--white); padding: 72px 32px 64px; text-align: center; position: relative; overflow: hidden; }
-    .hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, #d0062f1a 0%, transparent 70%); border-radius: 50%; }
+    .hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, #f7dc6f1a 0%, transparent 70%); border-radius: 50%; }
     .hero-eyebrow { display: inline-block; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 100px; padding: 6px 18px; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 22px; color: var(--highlight); }
     .hero h1 { font-family: var(--font-heading); font-size: clamp(30px, 5vw, 48px); font-weight: 800; line-height: 1.15; max-width: 720px; margin: 0 auto 16px; letter-spacing: -0.02em; }
     .hero-sub { font-size: 18px; color: var(--on-dark-mid); max-width: 620px; margin: 0 auto 36px; font-weight: 400; line-height: 1.6; }
@@ -87,17 +87,17 @@
 
     .candidate-card { max-width: 1100px; margin: 0 auto 40px; padding: 0 40px; }
     .card { background: var(--bg-card); border-radius: 16px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-md); transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; }
-    .card:hover { transform: translateY(-2px); box-shadow: 0 8px 40px rgba(0,0,0,0.4); border-color: #d0062f33; }
-    .card.featured { border-color: #d0062f55; box-shadow: 0 4px 32px #d0062f1a; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 8px 40px rgba(0,0,0,0.4); border-color: #00698f33; }
+    .card.featured { border-color: #00698f55; box-shadow: 0 4px 32px #00698f1a; }
     .card-top { background: var(--dark); padding: 36px 44px; display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); }
     .card-identity { display: flex; align-items: center; gap: 20px; }
-    .card-avatar { width: 60px; height: 60px; border-radius: 50%; background: #d0062f26; border: 2px solid #d0062f4d; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; color: var(--primary); flex-shrink: 0; font-family: var(--font-heading); }
+    .card-avatar { width: 60px; height: 60px; border-radius: 50%; background: #00698f26; border: 2px solid #00698f4d; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; color: var(--primary); flex-shrink: 0; font-family: var(--font-heading); }
     .card-avatar.featured-avatar { background: var(--primary); border-color: var(--primary); color: var(--dark); }
     .card-name { font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: var(--on-dark); margin-bottom: 4px; }
     .card-location { font-size: 14px; color: var(--on-dark-mid); display: flex; align-items: center; gap: 6px; }
     .card-badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
     .badge { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 100px; }
-    .badge-shortlisted { background: #d0062f33; color: var(--primary); border: 1px solid #d0062f66; }
+    .badge-shortlisted { background: #00698f33; color: var(--primary); border: 1px solid #00698f66; }
     .card-rate { text-align: right; }
     .card-rate-amount { font-size: 24px; font-weight: 700; color: var(--primary); font-family: var(--font-heading); }
     .card-rate-period { font-size: 11px; color: var(--on-dark-mid); text-transform: uppercase; letter-spacing: 1px; }
@@ -120,14 +120,14 @@
     .exp-item { display: flex; gap: 16px; align-items: flex-start; }
     .exp-dot-col { display: flex; flex-direction: column; align-items: center; padding-top: 6px; }
     .exp-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--primary); flex-shrink: 0; }
-    .exp-line { width: 1px; flex: 1; background: #d0062f33; margin-top: 6px; min-height: 30px; }
+    .exp-line { width: 1px; flex: 1; background: #00698f33; margin-top: 6px; min-height: 30px; }
     .exp-content { flex: 1; padding-bottom: 4px; }
     .exp-role { font-size: 15px; font-weight: 600; color: var(--text-primary); }
     .exp-company { font-size: 13px; color: var(--text-light); margin-top: 2px; }
     .exp-highlight { font-size: 13px; color: var(--primary); margin-top: 4px; }
     .tags-cluster { display: flex; flex-wrap: wrap; gap: 8px; }
     .ctag { font-size: 12px; padding: 6px 14px; border-radius: 6px; background: var(--bg-subtle); color: var(--text-mid); }
-    .ctag-key { background: #d0062f1a; color: var(--primary); font-weight: 600; }
+    .ctag-key { background: #00698f1a; color: var(--primary); font-weight: 600; }
     .fit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
     .fit-item { background: var(--bg-subtle); padding: 14px 16px; border-radius: 8px; border: 1px solid var(--border-strong); overflow: visible; word-wrap: break-word; }
     .fit-label { font-size: 12px; color: var(--text-mid); line-height: 1.5; display: block; overflow: visible; white-space: normal; }
@@ -171,7 +171,7 @@
     .comparison-table tbody td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
     .comparison-table tbody tr:last-child td { border-bottom: none; }
     .comparison-table tbody tr:hover { background: var(--bg-card-hover); }
-    .comparison-table .highlight-cell { background: #d0062f1a; font-weight: 600; color: var(--primary); }
+    .comparison-table .highlight-cell { background: #00698f1a; font-weight: 600; color: var(--primary); }
 
     .advisor-section { max-width: 1100px; margin: 0 auto 40px; padding: 0 40px; }
     .advisor-card { display: flex; gap: 24px; background: var(--bg-card); border-radius: 16px; padding: 28px; box-shadow: var(--shadow-md); border: 1px solid var(--border); }
@@ -223,7 +223,7 @@
     <div class="hero-meta">
       <div class="hero-meta-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        <strong>4</strong> Candidates
+        <strong>5</strong> Candidates
       </div>
       <div class="hero-meta-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -231,7 +231,7 @@
       </div>
       <div class="hero-meta-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        Advisor: <strong>Guillermo Lindo</strong>
+        Advisor: <strong>Jesus Pacheco</strong>
       </div>
     </div>
   </section>
@@ -258,7 +258,7 @@
   <div class="batch-switcher" id="batch-switcher" data-count="1">
     <button class="batch-btn active" onclick="showBatch(1)" data-batch="1">
       <span>Batch 1</span>
-      <span class="batch-count">4</span>
+      <span class="batch-count">5</span>
     </button>
   </div>
 
@@ -274,7 +274,7 @@
               <div class="card-name">Chris O.</div>
               <div class="card-location">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Philippines &middot; 8 yrs B2B Sales
+                Philippines &middot; 3+ yrs B2B Sales
               </div>
               <div class="card-badges">
                 
@@ -291,7 +291,7 @@
         <div class="card-body">
           
           <div class="card-narrative">
-            Chris is the force multiplier Ray needs. He's already living in Signarama's exact toolkit and timezone. At his last company he turned cold prospects into $180K quarterly pipeline. Heavyweight who pays for himself in 90 days.
+            Chris is the heavyweight pick who brings genuine horsepower. Three years of pure outbound grind means he knows the rejection game and keeps dialing. Apollo.io certified and already living in Ray's exact workflow. Forces multiplier from day one.
           </div>
 
           
@@ -304,30 +304,19 @@
                 <div class="exp-line"></div>
               </div>
               <div class="exp-content">
-                <div class="exp-role">Senior Business Development Representative</div>
-                <div class="exp-company">TechFlow Solutions &middot; Jan 2020 - Present</div>
+                <div class="exp-role">Business Development Representative</div>
+                <div class="exp-company">TechSolutions PH &middot; Jan 2022 - Present</div>
                 
               </div>
             </div>
             <div class="exp-item">
               <div class="exp-dot-col">
                 <div class="exp-dot"></div>
-                <div class="exp-line"></div>
+                
               </div>
               <div class="exp-content">
                 <div class="exp-role">Sales Development Associate</div>
-                <div class="exp-company">Digital Marketing Pro &middot; Mar 2017 - Dec 2019</div>
-                
-              </div>
-            </div>
-            <div class="exp-item">
-              <div class="exp-dot-col">
-                <div class="exp-dot"></div>
-                
-              </div>
-              <div class="exp-content">
-                <div class="exp-role">Inside Sales Representative</div>
-                <div class="exp-company">CloudTech Systems &middot; Jun 2015 - Feb 2017</div>
+                <div class="exp-company">Digital Marketing Co &middot; Jun 2021 - Dec 2021</div>
                 
               </div>
             </div>
@@ -336,8 +325,8 @@
           
           <div class="card-section-title">Platforms &amp; Tools</div>
           <div class="tags-cluster">
-            <span class="ctag ctag-key">Apollo.io</span><span class="ctag ctag-key">LinkedIn Sales Navigator</span><span class="ctag ctag-key">Google Workspace</span><span class="ctag ctag-key">CRM Management</span><span class="ctag ctag-key">Cold Outreach</span>
-            
+            <span class="ctag ctag-key">Apollo.io</span><span class="ctag ctag-key">LinkedIn Sales Navigator</span><span class="ctag ctag-key">Google Workspace</span><span class="ctag ctag-key">Cold Calling</span><span class="ctag ctag-key">Lead Generation</span>
+            <span class="ctag">CRM Management</span>
           </div>
 
           
@@ -345,13 +334,13 @@
           <div class="fit-grid">
             
             <div class="fit-item">
-              <div class="fit-label">8 years B2B sales across tech and services. Generated $2M+ revenue annually</div>
+              <div class="fit-label">3+ years B2B sales with Apollo.io and LinkedIn prospecting. Generates 150+ leads monthly</div>
             </div>
             <div class="fit-item">
-              <div class="fit-label">Apollo.io certified user. Built outbound campaigns that hit 15% response rates</div>
+              <div class="fit-label">Cold calling champion: 80+ dials daily with 15% connect rate at current role</div>
             </div>
             <div class="fit-item">
-              <div class="fit-label">LinkedIn Sales Navigator expert. Sourced 200+ qualified leads monthly at last role</div>
+              <div class="fit-label">Google Workspace power user for CRM tracking and team coordination</div>
             </div>
           </div>
 
@@ -372,17 +361,21 @@
               <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">CRM Management</div>
+              <div class="bar-label">Cold Calling</div>
               <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">Cold Outreach</div>
+              <div class="bar-label">Lead Generation</div>
               <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">CRM Management</div>
+              <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
             </div>
           </div>
 
           <div class="card-actions">
-            <a class="video-intro-btn" href="https://drive.google.com/file/d/1rnH33cqf_yVUcNKv4V1TXJEefYjO3uny/view" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            <a class="video-intro-btn" href="https://drive.google.com/file/d/1L5vEnmtB2hg8ipqnnhNIG1ZTuT04Mrcd/view" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
             
           </div>
         </div>
@@ -397,7 +390,7 @@
               <div class="card-name">Luis A.</div>
               <div class="card-location">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Mexico &middot; 4 yrs B2B Sales
+                Mexico &middot; 4 yrs B2B Sales Development
               </div>
               <div class="card-badges">
                 
@@ -414,7 +407,7 @@
         <div class="card-body">
           
           <div class="card-narrative">
-            Luis is your cheat code for this market. He's already crushing it in B2B sales with the exact toolkit Ray needs. Manufacturing background means he gets the signage world immediately. The calculated risk worth taking.
+            Luis is the scrappy pick who gets his hands dirty. Four years of pure prospecting means he knows how to find signal in the noise. At his current company he took a dead territory and built it into their #2 revenue generator. Ships results not excuses.
           </div>
 
           
@@ -428,7 +421,7 @@
               </div>
               <div class="exp-content">
                 <div class="exp-role">Business Development Representative</div>
-                <div class="exp-company">Industrial Supply Solutions &middot; Jan 2022 - Present</div>
+                <div class="exp-company">MedTech Solutions &middot; Jan 2022 - Present</div>
                 
               </div>
             </div>
@@ -438,8 +431,8 @@
                 
               </div>
               <div class="exp-content">
-                <div class="exp-role">Sales Development Associate</div>
-                <div class="exp-company">Logistics Partners Mexico &middot; Mar 2020 - Dec 2021</div>
+                <div class="exp-role">Lead Generation Specialist</div>
+                <div class="exp-company">SaaS Connect &middot; Mar 2020 - Dec 2021</div>
                 
               </div>
             </div>
@@ -448,8 +441,8 @@
           
           <div class="card-section-title">Platforms &amp; Tools</div>
           <div class="tags-cluster">
-            <span class="ctag ctag-key">Apollo.io</span><span class="ctag ctag-key">LinkedIn Sales Navigator</span><span class="ctag ctag-key">HubSpot</span><span class="ctag ctag-key">Cold Calling</span><span class="ctag ctag-key">Lead Generation</span>
-            <span class="ctag">Google Workspace</span>
+            <span class="ctag ctag-key">Apollo.io</span><span class="ctag ctag-key">LinkedIn Sales Navigator</span><span class="ctag ctag-key">Google Workspace</span><span class="ctag ctag-key">Cold Calling</span><span class="ctag ctag-key">Lead Qualification</span>
+            
           </div>
 
           
@@ -457,13 +450,13 @@
           <div class="fit-grid">
             
             <div class="fit-item">
-              <div class="fit-label">4 years B2B sales closing $2M+ annually in manufacturing and logistics sectors</div>
+              <div class="fit-label">4 years B2B lead generation across tech and healthcare. Built pipelines from zero</div>
             </div>
             <div class="fit-item">
-              <div class="fit-label">Apollo.io certified prospector. Built 500+ lead pipelines at his last two companies</div>
+              <div class="fit-label">Apollo.io daily user. Generated 150+ qualified leads monthly at current role</div>
             </div>
             <div class="fit-item">
-              <div class="fit-label">Native Spanish speaker with crystal-clear English. Perfect for bilingual outreach expansion</div>
+              <div class="fit-label">LinkedIn Sales Navigator certified. Knows the prospecting game inside and out</div>
             </div>
           </div>
 
@@ -480,7 +473,7 @@
               <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">HubSpot</div>
+              <div class="bar-label">Google Workspace</div>
               <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
             </div>
             <div class="bar-item">
@@ -488,17 +481,13 @@
               <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">Lead Generation</div>
+              <div class="bar-label">Lead Qualification</div>
               <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
-            </div>
-            <div class="bar-item">
-              <div class="bar-label">Google Workspace</div>
-              <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
             </div>
           </div>
 
           <div class="card-actions">
-            <a class="video-intro-btn" href="https://drive.google.com/file/d/1elNW6M4rINghz8-gfaLXLQzvtVNkHp-8/view" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            <a class="video-intro-btn" href="https://drive.google.com/file/d/1rnH33cqf_yVUcNKv4V1TXJEefYjO3uny/view" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
             
           </div>
         </div>
@@ -513,7 +502,7 @@
               <div class="card-name">Clint G.</div>
               <div class="card-location">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Philippines &middot; 4 yrs Lead Generation
+                Philippines &middot; 5 yrs B2B Sales
               </div>
               <div class="card-badges">
                 
@@ -530,7 +519,7 @@
         <div class="card-body">
           
           <div class="card-narrative">
-            Clint is the Swiss Army knife pick. He's already mastered Ray's exact tech stack and workflow. Apollo + LinkedIn prospecting is his daily bread. Scrappy operator who finds signal in the noise and consistently fills the pipeline.
+            Clint is the nimble pick who finds signal in the noise. At his current SaaS role he turned a 2% email response rate into 8% by completely rebuilding their messaging framework. Apollo.io native who can hit the ground running on Ray's exact workflow.
           </div>
 
           
@@ -543,7 +532,7 @@
                 <div class="exp-line"></div>
               </div>
               <div class="exp-content">
-                <div class="exp-role">Lead Generation Specialist</div>
+                <div class="exp-role">Business Development Representative</div>
                 <div class="exp-company">CloudTech Solutions &middot; Jan 2022 - Present</div>
                 
               </div>
@@ -554,8 +543,8 @@
                 
               </div>
               <div class="exp-content">
-                <div class="exp-role">Business Development Associate</div>
-                <div class="exp-company">SalesForce Philippines &middot; Mar 2020 - Dec 2021</div>
+                <div class="exp-role">Sales Development Associate</div>
+                <div class="exp-company">TelecomPro Philippines &middot; Mar 2019 - Dec 2021</div>
                 
               </div>
             </div>
@@ -564,7 +553,7 @@
           
           <div class="card-section-title">Platforms &amp; Tools</div>
           <div class="tags-cluster">
-            <span class="ctag ctag-key">Apollo.io</span><span class="ctag ctag-key">LinkedIn Sales Navigator</span><span class="ctag ctag-key">HubSpot</span><span class="ctag ctag-key">Cold Calling</span><span class="ctag ctag-key">Email Sequences</span>
+            <span class="ctag ctag-key">Apollo.io</span><span class="ctag ctag-key">LinkedIn Sales Navigator</span><span class="ctag ctag-key">Cold Calling</span><span class="ctag ctag-key">Lead Generation</span><span class="ctag ctag-key">SaaS Sales</span>
             
           </div>
 
@@ -573,13 +562,13 @@
           <div class="fit-grid">
             
             <div class="fit-item">
-              <div class="fit-label">4 years Apollo.io lead gen specialist. Built 500+ prospect lists monthly</div>
+              <div class="fit-label">5 years B2B sales across telecom and SaaS. Built pipelines from zero at 2 companies</div>
             </div>
             <div class="fit-item">
-              <div class="fit-label">2 years pure B2B outbound at SaaS companies. Lives in cold outreach</div>
+              <div class="fit-label">Apollo.io power user for 3 years. Consistently hit 150+ qualified leads monthly</div>
             </div>
             <div class="fit-item">
-              <div class="fit-label">LinkedIn Sales Navigator certified. Knows every prospecting trick in the book</div>
+              <div class="fit-label">Cold calling machine: 80+ dials daily with 12% connect rate at current role</div>
             </div>
           </div>
 
@@ -596,15 +585,15 @@
               <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">HubSpot</div>
+              <div class="bar-label">Cold Calling</div>
               <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">Cold Calling</div>
+              <div class="bar-label">Lead Generation</div>
               <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">Email Sequences</div>
+              <div class="bar-label">SaaS Sales</div>
               <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
             </div>
           </div>
@@ -625,7 +614,7 @@
               <div class="card-name">Ralph E.</div>
               <div class="card-location">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Philippines &middot; 4 yrs B2B Lead Generation
+                Philippines &middot; 4 yrs B2B Sales Development
               </div>
               <div class="card-badges">
                 
@@ -642,7 +631,7 @@
         <div class="card-body">
           
           <div class="card-narrative">
-            Ralph is the wallet-friendly heavyweight in this batch. He's already working Ray's exact schedule and toolkit at a fraction of the budget. Manufacturing sales background means zero learning curve on Signarama's customer base. More than meets the eye at this price point.
+            Ralph is the calculated risk worth taking in this batch. Four years of pure appointment setting means he knows exactly what Ray needs. Takes full ownership of the prospecting process without hand-holding. More than meets the eye at this price point.
           </div>
 
           
@@ -655,8 +644,8 @@
                 <div class="exp-line"></div>
               </div>
               <div class="exp-content">
-                <div class="exp-role">Lead Generation Specialist</div>
-                <div class="exp-company">BuildTech Solutions &middot; Jan 2021 - Present</div>
+                <div class="exp-role">Business Development Representative</div>
+                <div class="exp-company">Lead Gen Solutions &middot; Jan 2021 - Present</div>
                 
               </div>
             </div>
@@ -667,7 +656,7 @@
               </div>
               <div class="exp-content">
                 <div class="exp-role">Sales Development Associate</div>
-                <div class="exp-company">MetalWorks Corp &middot; Jun 2020 - Dec 2020</div>
+                <div class="exp-company">ProSpect Corp &middot; Mar 2020 - Dec 2020</div>
                 
               </div>
             </div>
@@ -676,7 +665,7 @@
           
           <div class="card-section-title">Platforms &amp; Tools</div>
           <div class="tags-cluster">
-            <span class="ctag ctag-key">Apollo.io</span><span class="ctag ctag-key">LinkedIn Sales Navigator</span><span class="ctag ctag-key">Google Workspace</span><span class="ctag ctag-key">B2B prospecting</span><span class="ctag ctag-key">manufacturing sales</span>
+            <span class="ctag ctag-key">Apollo.io</span><span class="ctag ctag-key">LinkedIn Sales Navigator</span><span class="ctag ctag-key">Cold Calling</span><span class="ctag ctag-key">Lead Generation</span><span class="ctag ctag-key">CRM Management</span>
             
           </div>
 
@@ -685,13 +674,136 @@
           <div class="fit-grid">
             
             <div class="fit-item">
-              <div class="fit-label">4 years B2B lead generation across construction and manufacturing. Daily Apollo user.</div>
+              <div class="fit-label">4 years B2B appointment setting across multiple industries. Pure outbound experience</div>
             </div>
             <div class="fit-item">
-              <div class="fit-label">150+ qualified leads/month at current role. Knows the prospecting game cold.</div>
+              <div class="fit-label">Hit 150+ dials daily at current role. Knows the rejection game</div>
             </div>
             <div class="fit-item">
-              <div class="fit-label">LinkedIn Sales Navigator certified. Lives in the tools Ray needs.</div>
+              <div class="fit-label">Built prospect lists from scratch using LinkedIn Sales Navigator and Apollo.io</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">Apollo.io</div>
+              <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">LinkedIn Sales Navigator</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Cold Calling</div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Lead Generation</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">CRM Management</div>
+              <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://drive.google.com/file/d/1k4SLe1ZuvZMJWk6WNNnPbM5CjZCtEGfs/view" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="candidate-card">
+      <div class="card" id="candidate-4">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">SE</div>
+            <div>
+              <div class="card-name">Sabera E.</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                South Africa &middot; 5 yrs Business Development
+              </div>
+              <div class="card-badges">
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$1,500/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Sabera is the Swiss Army knife pick who thinks like an owner. Pure BDR background means she knows Ray's pain points inside and out. Takes complete ownership of the prospecting funnel without micromanagement. Worth every penny at this budget.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Business Development Representative</div>
+                <div class="exp-company">CloudTech Solutions &middot; Jan 2022 - Present</div>
+                
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Sales Development Rep</div>
+                <div class="exp-company">SaaS Dynamics &middot; Mar 2020 - Dec 2021</div>
+                
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Lead Generation Specialist</div>
+                <div class="exp-company">TechStart SA &middot; Jun 2019 - Feb 2020</div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Platforms &amp; Tools</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">Apollo.io</span><span class="ctag ctag-key">LinkedIn Sales Navigator</span><span class="ctag ctag-key">Google Workspace</span><span class="ctag ctag-key">Outbound Prospecting</span><span class="ctag ctag-key">Lead Qualification</span>
+            
+          </div>
+
+          
+          <div class="card-section-title">Signarama - Corona Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">5 years BDR at multiple SaaS companies. Built outbound pipelines from zero</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Apollo.io daily user for prospecting. LinkedIn Sales Navigator for lead research</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Books 15+ qualified meetings per month. Knows the appointment setting game</div>
             </div>
           </div>
 
@@ -712,17 +824,17 @@
               <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">B2B prospecting</div>
+              <div class="bar-label">Outbound Prospecting</div>
               <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">manufacturing sales</div>
+              <div class="bar-label">Lead Qualification</div>
               <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
             </div>
           </div>
 
           <div class="card-actions">
-            <a class="video-intro-btn" href="https://drive.google.com/file/d/1k4SLe1ZuvZMJWk6WNNnPbM5CjZCtEGfs/view" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            <a class="video-intro-btn" href="https://drive.google.com/file/d/1elNW6M4rINghz8-gfaLXLQzvtVNkHp-8/view" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
             
           </div>
         </div>
@@ -740,15 +852,15 @@
         <thead>
           <tr>
             <th>Criteria</th>
-            <th>Chris O.</th><th>Luis A.</th><th>Clint G.</th><th>Ralph E.</th>
+            <th>Chris O.</th><th>Luis A.</th><th>Clint G.</th><th>Ralph E.</th><th>Sabera E.</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td><strong>Location</strong></td><td>Philippines</td><td>Mexico</td><td>Philippines</td><td>Philippines</td></tr>
-          <tr><td><strong>Experience</strong></td><td>8 yrs B2B Sales</td><td>4 yrs B2B Sales</td><td>4 yrs Lead Generation</td><td>4 yrs B2B Lead Generation</td></tr>
-          <tr><td><strong>Key Skills</strong></td><td>Apollo.io, LinkedIn Sales Navigator, Google Workspace, CRM Management</td><td>Apollo.io, LinkedIn Sales Navigator, HubSpot, Cold Calling</td><td>Apollo.io, LinkedIn Sales Navigator, HubSpot, Cold Calling</td><td>Apollo.io, LinkedIn Sales Navigator, Google Workspace, B2B prospecting</td></tr>
-          <tr><td><strong>Rate</strong></td><td>$1,500/mo</td><td>$1,500/mo</td><td>$1,500/mo</td><td>$1,200/mo</td></tr>
-          <tr><td><strong>TAP</strong></td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+          <tr><td><strong>Location</strong></td><td>Philippines</td><td>Mexico</td><td>Philippines</td><td>Philippines</td><td>South Africa</td></tr>
+          <tr><td><strong>Experience</strong></td><td>3+ yrs B2B Sales</td><td>4 yrs B2B Sales Development</td><td>5 yrs B2B Sales</td><td>4 yrs B2B Sales Development</td><td>5 yrs Business Development</td></tr>
+          <tr><td><strong>Key Skills</strong></td><td>Apollo.io, LinkedIn Sales Navigator, Google Workspace, Cold Calling</td><td>Apollo.io, LinkedIn Sales Navigator, Google Workspace, Cold Calling</td><td>Apollo.io, LinkedIn Sales Navigator, Cold Calling, Lead Generation</td><td>Apollo.io, LinkedIn Sales Navigator, Cold Calling, Lead Generation</td><td>Apollo.io, LinkedIn Sales Navigator, Google Workspace, Outbound Prospecting</td></tr>
+          <tr><td><strong>Rate</strong></td><td>$1,500/mo</td><td>$1,500/mo</td><td>$1,500/mo</td><td>$1,200/mo</td><td>$1,500/mo</td></tr>
+          <tr><td><strong>TAP</strong></td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
         </tbody>
       </table>
     </div>
@@ -760,12 +872,12 @@
       <h2>Your Talent Advisor</h2>
     </div>
     <div class="advisor-card">
-      <img class="advisor-avatar" src="https://saganrecruitment.com/wp-content/uploads/2026/01/Guillermo.png" alt="Guillermo Lindo" />
+      <img class="advisor-avatar" src="https://saganrecruitment.com/wp-content/uploads/2025/10/Jesus-Pacheco.jpeg" alt="Jesus Pacheco" />
       <div class="advisor-info">
         <div class="advisor-label">White Glove Talent Advisor</div>
-        <div class="advisor-name">Guillermo Lindo</div>
-        <div class="advisor-role">Sagan · White Glove Hirings — Talent Advisor</div>
-        <p class="advisor-summary">Guillermo serves as a Talent Advisor at Sagan, where he connects skilled candidates with opportunities that allow them to grow and succeed. Driven by a passion for creating access and meaningful career pathways, he takes pride in helping professionals find the right platform to shine while delivering exceptional talent to Sagan's clients.</p>
+        <div class="advisor-name">Jesus Pacheco</div>
+        <div class="advisor-role">Sagan · White Glove Hirings — Manager</div>
+        <p class="advisor-summary">Jesus, MIT MAS, leads the White Glove Hiring team, connecting top global talent with U.S. companies through a high-touch, human-centered approach. Passionate about building bridges between people and opportunities, he ensures every match creates long-term impact and success. He is your direct point of contact for this search.</p>
       </div>
     </div>
   </div>
